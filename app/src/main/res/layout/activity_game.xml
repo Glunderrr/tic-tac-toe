@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FriendGame">
+
+    <Button
+        android:id="@+id/exit_button"
+        style="@style/exitButton"/>
+
+    <TextView
+        android:id="@+id/left_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/three_button"
+        app:layout_constraintTop_toBottomOf="@+id/top_image" />
+
+    <TextView
+        android:id="@+id/left_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/three_button"
+        app:layout_constraintTop_toBottomOf="@+id/left_name" />
+
+    <TextView
+        android:id="@+id/left_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/three_button"
+        app:layout_constraintTop_toBottomOf="@+id/left_rating" />
+
+    <TextView
+        android:id="@+id/right_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintLeft_toRightOf="@+id/fife_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/left_name" />
+
+    <TextView
+        android:id="@+id/right_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@+id/fife_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_name" />
+
+    <TextView
+        android:id="@+id/right_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="O"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/fife_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_rating" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/four_button"
+        style="@style/barsOfGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/one_button"
+        style="@style/barsOfGame"
+        app:layout_constraintBottom_toTopOf="@+id/four_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/seven_button"
+        style="@style/barsOfGame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four_button" />
+
+    <ImageView
+        android:id="@+id/fife_button"
+        style="@style/barsOfGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/four_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/three_button"
+        style="@style/barsOfGame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/four_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/zero_button"
+        style="@style/barsOfGame"
+        app:layout_constraintBottom_toTopOf="@+id/four_button"
+        app:layout_constraintRight_toLeftOf="@+id/four_button" />
+
+    <ImageView
+        android:id="@+id/two_button"
+        style="@style/barsOfGame"
+        app:layout_constraintBottom_toTopOf="@+id/four_button"
+        app:layout_constraintLeft_toRightOf="@+id/four_button" />
+
+    <ImageView
+        android:id="@+id/eight_button"
+        style="@style/barsOfGame"
+        app:layout_constraintLeft_toRightOf="@+id/four_button"
+        app:layout_constraintTop_toBottomOf="@+id/four_button" />
+
+    <ImageView
+        android:id="@+id/six_button"
+        style="@style/barsOfGame"
+        app:layout_constraintRight_toLeftOf="@+id/four_button"
+        app:layout_constraintTop_toBottomOf="@+id/four_button" />
+
+    <ImageView
+        android:id="@+id/top_image"
+        style="@style/leftCornImg." />
+
+    <ImageView
+        android:id="@+id/down_image"
+        style="@style/rightCornImg" />
+
+</android.support.constraint.ConstraintLayout>

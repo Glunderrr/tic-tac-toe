@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tic-tac-toe</string>
+    <string name="first_move">First move</string>
+    <string name="your_move">Your move</string>
+    <string name="win">Wins: </string>
+    <string name="lose">Defeat: </string>
+    <string name="draw">Draws: </string>
+
+    <string name="enter_name">"Please enter the names"</string>
+    <string name="winner">is the winner!!</string>
+    <string name="is_win">You won!</string>
+    <string name="play_more">Play more!</string>
+    <string name="your_lose">unfortunately\nyou lost(((</string>
+    <string name="your_draw">Draw...</string>
+
+    <string name="left_name">Left name</string>
+    <string name="right_name">Right name</string>
+    <string name="finish">GO!</string>
+
+    <string name="your_play_status">Your sign</string>
+    <string name="stat">Statistics</string>
+
+    <string name="play_with_bot">play with computer</string>
+    <string name="play_with_friend">play with\nfriend</string>
+</resources>

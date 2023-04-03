@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/top_image"
+        style="@style/leftCornImg." />
+
+    <ImageView
+        android:id="@+id/down_image"
+        style="@style/rightCornImg" />
+
+    <Button
+        android:textStyle="bold"
+        style="@style/RoundButton."
+        android:id="@+id/friend_Button"
+        android:layout_width="260dp"
+        android:layout_height="110dp"
+        android:text="@string/play_with_friend"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bot_Button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:textStyle="bold"
+        style="@style/RoundButton."
+        android:id="@+id/bot_Button"
+        android:layout_width="260dp"
+        android:layout_height="110dp"
+        android:text="@string/play_with_bot"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/friend_Button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+

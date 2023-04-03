@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Statistics">
+
+    <ImageView
+        android:id="@+id/top_image"
+        style="@style/leftCornImg." />
+
+    <ImageView
+        android:id="@+id/down_image"
+        style="@style/rightCornImg" />
+
+    <Button
+        android:id="@+id/exit_button"
+        style="@style/exitButton"/>
+
+    <TextView
+        android:id="@+id/win_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/win"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toTopOf="@+id/lose_text"
+        app:layout_constraintLeft_toRightOf="@+id/top_image" />
+
+    <TextView
+        android:id="@+id/lose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lose"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/win_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/draw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/draw"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        app:layout_constraintLeft_toLeftOf="@+id/win_text"
+        app:layout_constraintTop_toBottomOf="@+id/lose_text" />
+
+
+</android.support.constraint.ConstraintLayout>
