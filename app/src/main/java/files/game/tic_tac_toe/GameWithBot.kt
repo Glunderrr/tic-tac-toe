@@ -66,15 +66,15 @@ class GameWithBot : AppCompatActivity() {
         drawCount++
         return if (check(list, flag)) {
             win++
-            val intent = Intent(this, WinBot::class.java)
-            clearScreen()
+            val intent = Intent(this, WinActivity::class.java)
             startActivity(intent)
+            clearScreen()
             true
         } else if (drawCount == 9) {
             draw++
             val intent = Intent(this, DrawActivity::class.java)
-            clearScreen()
             startActivity(intent)
+            clearScreen()
             true
         } else false
     }
@@ -84,13 +84,13 @@ class GameWithBot : AppCompatActivity() {
         if (check(list,flag)) {
             lose++
             val intent = Intent(this, LoseBot::class.java)
-            clearScreen()
             startActivity(intent)
+            clearScreen()
         } else if (drawCount == 9) {
             draw++
             val intent = Intent(this, DrawActivity::class.java)
-            clearScreen()
             startActivity(intent)
+            clearScreen()
         }
     }
 

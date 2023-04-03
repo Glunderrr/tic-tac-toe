@@ -3,9 +3,7 @@ package files.game.tic_tac_toe
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import files.game.tic_tac_toe.databinding.ActivityGameBinding
 
 class FriendGame : AppCompatActivity() {
@@ -50,7 +48,7 @@ class FriendGame : AppCompatActivity() {
         rightName.text = intent.extras?.getString("friend_name_key")
         playerName[left] = leftName.text.toString();playerName[right] = rightName.text.toString()
         buttons = arrayOf(
-            zeroButton, oneButton, twoButton, threeButton, fourButton, 
+            zeroButton, oneButton, twoButton, threeButton, fourButton,
             fifeButton, sixButton, sevenButton, eightButton
         )
     }
@@ -71,7 +69,7 @@ class FriendGame : AppCompatActivity() {
 
     private fun winCheck(value: Boolean) {
         drawCount++
-        if (check(list,flag)) {
+        if (check(list, flag)) {
             val intent = Intent(this, WinActivity::class.java)
             for (index in playerStatus.indices) {
                 if (playerStatus[index] == value) {
