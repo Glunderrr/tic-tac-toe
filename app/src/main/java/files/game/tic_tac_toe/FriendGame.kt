@@ -92,23 +92,6 @@ class FriendGame : AppCompatActivity() {
     }
 }
 
-class WinActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.win_screen)
-        findViewById<Button>(R.id.play_more_button).setOnClickListener { finish() }
-        findViewById<TextView>(R.id.win_name).text = intent.extras?.getString("winner_name")
-    }
-}
-
-class DrawActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.draw_screen)
-        findViewById<Button>(R.id.play_more_button).setOnClickListener { finish() }
-    }
-}
-
 fun check(list: Array<Boolean?>, flag: Boolean): Boolean {
     return list[0] == flag && list[4] == flag && list[8] == flag ||
             list[2] == flag && list[4] == flag && list[6] == flag ||
