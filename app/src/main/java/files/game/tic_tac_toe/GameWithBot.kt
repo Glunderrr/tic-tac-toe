@@ -36,7 +36,7 @@ class GameWithBot : AppCompatActivity() {
 
     private fun setOnClickListeners() {
         binding.exitButton.setOnClickListener { finish() }
-        buttons.forEachIndexed { index, button -> button.setOnClickListener { clickRoutine(index) } }
+        buttons.forEachIndexed { number, button -> button.setOnClickListener { clickRoutine(number) } }
         binding.statisticButton.setOnClickListener {
             val intent = Intent(this@GameWithBot, Statistics::class.java)
             intent.putExtras(saveStatAndCreateBundleWithThis())
@@ -48,7 +48,6 @@ class GameWithBot : AppCompatActivity() {
         list[number] = myStatus
         upDateBarView(number)
         if (!myWinCheck(myStatus)) {
-
             upDateBarView(bot.answer(!myStatus))
             botWinCheck(!myStatus)
         }

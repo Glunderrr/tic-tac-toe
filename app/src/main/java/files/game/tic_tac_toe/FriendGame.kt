@@ -7,7 +7,6 @@ import android.widget.ImageView
 import files.game.tic_tac_toe.databinding.ActivityGameBinding
 
 class FriendGame : AppCompatActivity() {
-
     private lateinit var binding: ActivityGameBinding
     private var drawCount = 0
     private var flag = true

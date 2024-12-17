@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Хрестики-нулики</string>
+    <string name="app_name">Хрестики-\nнулики</string>
     <string name="first_move">Перший хід</string>
     <string name="your_move">Ваш хід</string>
     <string name="win">Перемоги: </string>
@@ -11,7 +11,7 @@
     <string name="winner">\nпереможець!</string>
     <string name="is_win">Перемога!</string>
     <string name="play_more">Грати ще!</string>
-    <string name="your_lose">На жаль ви програли(((</string>
+    <string name="your_lose">На жаль, ви програли(((</string>
     <string name="your_draw">Нічия...</string>
 
     <string name="left_name">Гравець зліва</string>
